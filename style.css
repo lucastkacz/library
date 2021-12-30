@@ -7,3 +7,12 @@
 footer {
     text-align: center;
 }
+
+#delete-button {
+    background-color: rgb(235, 60, 60);
+    border: red;
+}
+
+#delete-button:hover {
+    background-color: rgb(185, 46, 46);
+}

@@ -38,13 +38,7 @@
                 <div class="grid">
                     <input type="text" name="name" placeholder="Book's Name" required />
                     <input type="text" name="author" placeholder="Author's Name" required />
-                    <input
-                        type="number"
-                        name="pages"
-                        placeholder="Amount of Pages"
-                        min="1"
-                        required
-                    />
+                    <input type="number" name="pages" placeholder="# of Pages" min="1" required />
                     <select name="status">
                         <option value="read">Read</option>
                         <option value="not-read">Not read</option>
@@ -73,7 +67,7 @@
                                 <td>J. K. Rowling</td>
                                 <td>223</td>
                                 <td>Not Read</td>
-                                <td><button>Delete</button></td>
+                                <td><button id="delete-button">Delete</button></td>
                             </tr>
                             <tr>
                                 <th scope="row">2</th>
@@ -81,13 +75,12 @@
                                 <td>J. R. R. Tolkien</td>
                                 <td>423</td>
                                 <td>Read</td>
-                                <td><button>Delete</button></td>
+                                <td><button id="delete-button">Delete</button></td>
                             </tr>
                         </tbody>
                     </table>
                 </figure>
             </section>
-            <!-- ./ Tables -->
         </main>
         <footer>@ <a href="https://github.com/lucastkacz/library">lucastkacz</a></footer>
     </body>
