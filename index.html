@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script type="text/javascript" src="./js/script.js" defer></script>
+        <script type="text/javascript" src="./js/theme_switcher.js" defer></script>
+        <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css" />
+        <link rel="stylesheet" href="./style.css" />
+        <link rel="icon" type="image/x-icon" href="./img/book.ico" />
+        <title>Library</title>
+    </head>
+
+    <body class="container">
+        <main>
+            <div class="flex-header-container">
+                <h1>Project: Library</h1>
+                <nav>
+                    <ul>
+                        <li>Theme:</li>
+                        <li><a href="#" data-theme-switcher="light">Light</a></li>
+                        <li><a href="#" data-theme-switcher="dark">Dark</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <p>
+                This is the first project of the Javascript course in
+                <a
+                    href="https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript/lessons/library"
+                    >'The Odin Project'</a
+                >
+                . The objective of this project is to extend the Book example from the previous
+                lesson and turn it into a small Library app.
+            </p>
+
+            <form>
+                <div class="grid">
+                    <input type="text" name="name" placeholder="Book's Name" required />
+                    <input type="text" name="author" placeholder="Author's Name" required />
+                    <input
+                        type="number"
+                        name="pages"
+                        placeholder="Amount of Pages"
+                        min="1"
+                        required
+                    />
+                    <select name="status">
+                        <option value="read">Read</option>
+                        <option value="not-read">Not read</option>
+                    </select>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+
+            <section id="tables">
+                <figure>
+                    <table role="grid">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Author</th>
+                                <th scope="col">Pages</th>
+                                <th scope="col">Status</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Harry Potter and the Philosopher's Stone</td>
+                                <td>J. K. Rowling</td>
+                                <td>223</td>
+                                <td>Not Read</td>
+                                <td><button>Delete</button></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>The Fellowship of the Ring</td>
+                                <td>J. R. R. Tolkien</td>
+                                <td>423</td>
+                                <td>Read</td>
+                                <td><button>Delete</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </figure>
+            </section>
+            <!-- ./ Tables -->
+        </main>
+        <footer>@ <a href="https://github.com/lucastkacz/library">lucastkacz</a></footer>
+    </body>
+</html>
