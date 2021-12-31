@@ -34,54 +34,46 @@
                 lesson and turn it into a small Library app.
             </p>
 
-            <form>
+            <form onsubmit="return false">
                 <div class="grid">
-                    <input type="text" name="name" placeholder="Book's Name" required />
-                    <input type="text" name="author" placeholder="Author's Name" required />
-                    <input type="number" name="pages" placeholder="# of Pages" min="1" required />
-                    <select name="status">
-                        <option value="read">Read</option>
-                        <option value="not-read">Not read</option>
-                    </select>
-                    <button type="submit">Submit</button>
+                  <input id="name" type="text" placeholder="Book's Name" required />
+                  <input id="author" type="text" placeholder="Author's Name" required />
+                  <input 
+                    id="pages"
+                    type="number"
+                    placeholder="# of Pages"
+                    min="1"
+                    required
+                  />
+                  <select id="status">
+                    <option value="Read">Read</option>
+                    <option value="Not Read">Not read</option>
+                  </select>
+                  <input type="submit" value="submit"></input>
                 </div>
-            </form>
-
-            <section id="tables">
+              </form>
+            
+              <section id="tables">
                 <figure>
-                    <table role="grid">
-                        <thead>
-                            <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">Name</th>
-                                <th scope="col">Author</th>
-                                <th scope="col">Pages</th>
-                                <th scope="col">Status</th>
-                                <th scope="col"></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Harry Potter and the Philosopher's Stone</td>
-                                <td>J. K. Rowling</td>
-                                <td>223</td>
-                                <td>Not Read</td>
-                                <td><button id="delete-button">Delete</button></td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>The Fellowship of the Ring</td>
-                                <td>J. R. R. Tolkien</td>
-                                <td>423</td>
-                                <td>Read</td>
-                                <td><button id="delete-button">Delete</button></td>
-                            </tr>
-                        </tbody>
-                    </table>
+                  <table role="grid" >
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Author</th>
+                        <th scope="col">Pages</th>
+                        <th scope="col">Status</th>
+                        <th scope="col"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                     
+                    </tbody>
+                  </table>
                 </figure>
             </section>
         </main>
         <footer>@ <a href="https://github.com/lucastkacz/library">lucastkacz</a></footer>
     </body>
 </html>
+

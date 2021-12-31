@@ -11,6 +11,7 @@ footer {
 #delete-button {
     background-color: rgb(235, 60, 60);
     border: red;
+    margin-top: 19px;
 }
 
 #delete-button:hover {
