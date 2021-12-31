@@ -1,79 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <script type="text/javascript" src="./js/script.js" defer></script>
-        <script type="text/javascript" src="./js/theme_switcher.js" defer></script>
-        <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css" />
-        <link rel="stylesheet" href="./style.css" />
-        <link rel="icon" type="image/x-icon" href="./img/book.ico" />
-        <title>Library</title>
-    </head>
-
-    <body class="container">
-        <main>
-            <div class="flex-header-container">
-                <h1>Project: Library</h1>
-                <nav>
-                    <ul>
-                        <li>Theme:</li>
-                        <li><a href="#" data-theme-switcher="light">Light</a></li>
-                        <li><a href="#" data-theme-switcher="dark">Dark</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <p>
-                This is the first project of the Javascript course in
-                <a
-                    href="https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript/lessons/library"
-                    >'The Odin Project'</a
-                >
-                . The objective of this project is to extend the Book example from the previous
-                lesson and turn it into a small Library app.
-            </p>
-
-            <form onsubmit="return false">
-                <div class="grid">
-                  <input id="name" type="text" placeholder="Book's Name" required />
-                  <input id="author" type="text" placeholder="Author's Name" required />
-                  <input 
-                    id="pages"
-                    type="number"
-                    placeholder="# of Pages"
-                    min="1"
-                    required
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <script type="text/javascript" src="./js/script.js" defer></script>
+      <script type="text/javascript" src="./js/theme_switcher.js" defer></script>
+      <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css" />
+      <link rel="stylesheet" href="./style.css" />
+      <link rel="icon" type="image/x-icon" href="./img/book.ico" />
+      <title>Library</title>
+   </head>
+   <body class="container">
+      <main>
+         <div class="flex-header-container">
+            <h1>Project: Library</h1>
+            <nav>
+               <ul>
+                  <li>Theme:</li>
+                  <li><a href="#" data-theme-switcher="light">Light</a></li>
+                  <li><a href="#" data-theme-switcher="dark">Dark</a></li>
+               </ul>
+            </nav>
+         </div>
+         <p>
+            This is the first project of the Javascript course in
+            <a
+               href="https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript/lessons/library"
+               >'The Odin Project'</a
+               >
+            . The objective of this project is to extend the Book example from the previous
+            lesson and turn it into a small Library app.
+         </p>
+         <form onsubmit="return false">
+            <div class="grid">
+               <input id="name" type="text" placeholder="Book's Name" required />
+               <input id="author" type="text" placeholder="Author's Name" required />
+               <input 
+                  id="pages"
+                  type="number"
+                  placeholder="# of Pages"
+                  min="1"
+                  required
                   />
-                  <select id="status">
-                    <option value="Read">Read</option>
-                    <option value="Not Read">Not read</option>
-                  </select>
-                  <input type="submit" value="submit"></input>
-                </div>
-              </form>
-            
-              <section id="tables">
-                <figure>
-                  <table role="grid" >
-                    <thead>
-                      <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Name</th>
-                        <th scope="col">Author</th>
-                        <th scope="col">Pages</th>
-                        <th scope="col">Status</th>
-                        <th scope="col"></th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                     
-                    </tbody>
-                  </table>
-                </figure>
-            </section>
-        </main>
-        <footer>@ <a href="https://github.com/lucastkacz/library">lucastkacz</a></footer>
-    </body>
+               <select id="status">
+                  <option value="Read">Read</option>
+                  <option value="Not Read">Not read</option>
+               </select>
+               <input type="submit" value="submit"></input>
+            </div>
+         </form>
+         <table role="grid" >
+            <thead>
+               <tr>
+                  <th >#</th>
+                  <th >Name</th>
+                  <th >Author</th>
+                  <th >Pages</th>
+                  <th >Status</th>
+                  <th >Delete</th>
+               </tr>
+            </thead>
+            <tbody>
+            </tbody>
+         </table>
+      </main>
+      <footer>@ <a href="https://github.com/lucastkacz/library">lucastkacz</a></footer>
+   </body>
 </html>
 

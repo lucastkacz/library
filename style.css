@@ -8,12 +8,12 @@ footer {
     text-align: center;
 }
 
-#delete-button {
+.delete-button {
     background-color: rgb(235, 60, 60);
     border: red;
     margin-top: 19px;
 }
 
-#delete-button:hover {
+.delete-button:hover {
     background-color: rgb(185, 46, 46);
 }
